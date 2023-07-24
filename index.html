@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My Portfolio!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f805fd48a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/MyLogo.png" class="Logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p> Web Developer/Desinger </p>
+                <h1>Hey, Im <span> Matanel </span> <br> From The City <br> Of Ashkelon In Israel</h1>
+            </div>
+        </div>
+    </div>
+    <!------ About ------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Matanel Choraqui, born in jerusalem in 1996 and now living in Ashkelon. im a student
+                        passionate about web development. Proficient in HTML, CSS,
+                        JavaScript, and TypeScript,
+                        I'm dedicated to creating beautiful and functional websites. With a strong work ethic and a
+                        desire to learn from the
+                        best, I aim to become a skilled developer and build my own impressive projects. Let's connect
+                        and embark on this
+                        exciting journey together.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span> <br>User Interface Development</li>
+                            <li><span>Backend</span> <br>Server-side Processing</li>
+                            <li><span>Database and Storage</span> <br>Data Management Systems</li>
+                            <li><span>API Development</span> <br>Interoperable Software Integration</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2023</span> <br>Full Stuck Developer In Hakeru School</li>
+                        </ul>
+                    </div> <!-- fff -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------- Services ------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Web Development</h2>
+                    <p> I offer end-to-end web application development, handling both frontend and backend tasks. From
+                        creating visually
+                        appealing interfaces to designing and implementing server logic, I can deliver comprehensive web
+                        solutions tailored to
+                        your requirements.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2>API Development and Integration</h2>
+                    <p>I specialize in developing and integrating APIs to facilitate seamless communication between
+                        different software
+                        components or external services. Whether it's integrating with payment gateways or social media
+                        platforms, I ensure
+                        secure and efficient data exchange.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-slack"></i>
+                    <h2>Website Optimization & Performance</h2>
+                    <p> f you have an existing website that needs a performance boost, I can optimize its speed and
+                        responsiveness. By analyzing
+                        code, optimizing queries, and implementing best practices, I improve loading times and user
+                        experience across browsers
+                        and devices.
+
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------- portfolio ------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Project1.png">
+                    <div class="layer">
+                        <h3>TechIt</h3>
+                        <p>
+                            In This Project, You Have An Electric Demo Store Who Seles Leptops,Smartphones,And More...
+                        </p>
+                        <a href="http://127.0.0.1:5500/My-Work/PROJECT%201/mini_p_1.html" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Project2.png">
+                    <div class="layer">
+                        <h3>My Account</h3>
+                        <p>
+                            In This Project, You Can Manage Youre Own Bank Acount, By Controling All The
+                            Incomes And Outcomes
+                        </p>
+                        <a href="http://127.0.0.1:5500/My-Work/PROJECT%202/index.html" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i> </a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/Project3.png">
+                    <div class="layer">
+                        <h3>Manageu</h3>
+                        <p>
+                            In This Project, You Can Manage All Your Task Day
+
+                        </p>
+                        <a href="http://127.0.0.1:5500/My-Work/PROJECT%203/project_2_index.html" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------ Contact ------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>matanelshouraki770@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 054-5770921</p>
+                    <div class="social-Icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.google.com/intl/fr/gmail/about/"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <a href="images/My-CV.pages" download class="btn" id="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn" id="btn2">Submit</button>
+                    </form>
+                    <div id="msg"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @ Matanel. Made With <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
